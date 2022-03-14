@@ -1,14 +1,6 @@
 package primarySort;
 
 public class mergeSort {
-    /**
-     * �ϲ�������������
-     * @param arrԴ����
-     * @param arr1������
-     * @param sԴ������һ��������һ��Ԫ���±�
-     * @param mԴ������һ����������һ��Ԫ���±�
-     * @param tԴ�����ڶ���������һ��Ԫ���±�
-     */
 
     public static void merge(int[]arr,int[]arr1,int s,int m,int t) {
         int i=s;
@@ -28,13 +20,6 @@ public class mergeSort {
             arr1[k++]=arr[j++];
         }
     }
-    /**
-     * һ�˹鲢����
-     * @param arr
-     * @param arr1
-     * @param h
-     * @param n
-     */
     public static void mergePass(int[]arr,int[]arr1,int h,int n) {
         int i=0;
         while((i+2*h-1)<=n) {

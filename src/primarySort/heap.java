@@ -5,15 +5,15 @@ import java.util.Arrays;
 public class heap {
     public void heapSort(int[] num){
         int n = num.length;
-        for(int i = n/2;i>=0;i--){   //���ѣ���n/2��ʼ���ϵ���
+        for(int i = n/2;i>=0;i--){
             adjustHeap(num, i, n);
         }
         for(int j=n-1;j>=0;j--){
-            swap(num,0, j);         //������ʼ������λ���ϵ�����
-            adjustHeap(num, 0, j);    //����֮���ٵ�����
+            swap(num,0, j);
+            adjustHeap(num, 0, j);
         }
     }
-    public void adjustHeap(int[] num,int s,int n){  //���ڸ��ڵ������Ǵ�0��ʼ�ģ���������������2*i+1
+    public void adjustHeap(int[] num,int s,int n){
         for(int i=s;i<n;){
             int max = i;
             if((2*i+1)<n&&num[2*i+1]>num[max]) max = 2*i+1;

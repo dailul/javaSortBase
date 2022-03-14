@@ -18,7 +18,7 @@ public class trapRainWater02 {
         }
         for(int i = 1; i < height.length - 1; i++){
             if(height[i] > maxL) {
-                maxL = height[i];//������������ֵ
+                maxL = height[i];
             }
             waterSum += Math.max(Math.min(maxL, maxRs[i]) - height[i], 0);
         }
