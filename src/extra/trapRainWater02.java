@@ -6,7 +6,7 @@ public class trapRainWater02 {
             return 0;
         int maxL = height[0];
         int[] maxRs = new int[height.length];
-        int waterSum = 0;//�����ܵ�ˮ��
+        int waterSum = 0;
         int maxR = 0;
         for(int i = height.length - 1; i >= 0; i--){
             if(height[i] > maxR) {

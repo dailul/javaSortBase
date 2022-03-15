@@ -3,10 +3,10 @@ package primarySort;
 public class HeapSort {
 
     public void initHeap(int[] s) {
-        // ����һ��Ҷ�ӵ�˫���±�
+
         int lastParentIndex = s[0] / 2;
 
-        // �԰��ѽ�������
+
         for (int i = lastParentIndex; i > 0; i--) {
             this.reBuild(i, s, s[0]);
         }
@@ -64,16 +64,6 @@ public class HeapSort {
         s[j] = t;
     }
 
-    /**
-     * <pre>
-     * ������
-     * 1���� �Ѷ� Ԫ�� �� δ���� ������һ��Ҷ�ӽ���(������������Ҷ�����������ģ������Ķѵ��������ٿ�������Ҷ��Ԫ����)
-     * 2�����Ѷ�Ԫ�ذ��նѶ��壬���ν����³���ֱ���¶ѷ��϶Ѷ���
-     * 3���ظ�1,2
-     * </pre>
-     *
-     * @param s
-     */
     public void heapSort(int[] s) {
         System.out.printf("\n---------------------- heapSort ----------------------");
         for (int j = s[0]; j > 0; j--) {
